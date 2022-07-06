@@ -1,0 +1,903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D47D2010-BABF-3483-BF7D-872DA42AB840}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>testmkv</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\testmkv\testmkv\proj.win32\bin\testmkv\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">testmkv.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">testmkv</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\testmkv\testmkv\proj.win32\bin\testmkv\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">testmkv.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">testmkv</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\testmkv\testmkv\proj.win32\bin\testmkv\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">testmkv.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">testmkv</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\testmkv\testmkv\proj.win32\bin\testmkv\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">testmkv.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">testmkv</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\testmkv\testmkv\Classes;G:\testmkv\testmkv\cocos2d\cocos\audio\include;G:\testmkv\testmkv\cocos2d;G:\testmkv\testmkv\cocos2d\cocos;G:\testmkv\testmkv\cocos2d\extensions;G:\testmkv\testmkv\cocos2d\cocos\platform;G:\testmkv\testmkv\cocos2d\cocos\editor-support;G:\testmkv\testmkv\cocos2d\cocos\base;G:\testmkv\testmkv\cocos2d\cocos\platform\win32;G:\testmkv\testmkv\cocos2d\external\recast\..;G:\testmkv\testmkv\cocos2d\external\tinyxml2\.;G:\testmkv\testmkv\cocos2d\external\xxhash\.;G:\testmkv\testmkv\cocos2d\external\xxtea\.;G:\testmkv\testmkv\cocos2d\external\clipper\.;G:\testmkv\testmkv\cocos2d\external\edtaa3func\.;G:\testmkv\testmkv\cocos2d\external\ConvertUTF\.;G:\testmkv\testmkv\cocos2d\external\poly2tri\..;G:\testmkv\testmkv\cocos2d\external\md5\..;G:\testmkv\testmkv\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "G:/testmkv/testmkv/cocos2d/external/Box2D/include" /external:I "G:/testmkv/testmkv/cocos2d/external/chipmunk/include" /external:I "G:/testmkv/testmkv/cocos2d/external/freetype2/include/win32/freetype2" /external:I "G:/testmkv/testmkv/cocos2d/external/bullet/include" /external:I "G:/testmkv/testmkv/cocos2d/external/bullet/include/bullet" /external:I "G:/testmkv/testmkv/cocos2d/external/jpeg/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/openssl/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/uv/include" /external:I "G:/testmkv/testmkv/cocos2d/external/webp/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/websockets/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/curl/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/png/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/icon/include" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/OggDecoder/include" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "G:/testmkv/testmkv/cocos2d/external/glfw3/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\testmkv\testmkv\Classes;G:\testmkv\testmkv\cocos2d\cocos\audio\include;G:\testmkv\testmkv\cocos2d;G:\testmkv\testmkv\cocos2d\cocos;G:\testmkv\testmkv\cocos2d\extensions;G:\testmkv\testmkv\cocos2d\cocos\platform;G:\testmkv\testmkv\cocos2d\cocos\editor-support;G:\testmkv\testmkv\cocos2d\cocos\base;G:\testmkv\testmkv\cocos2d\cocos\platform\win32;G:\testmkv\testmkv\cocos2d\external\recast\..;G:\testmkv\testmkv\cocos2d\external\tinyxml2\.;G:\testmkv\testmkv\cocos2d\external\xxhash\.;G:\testmkv\testmkv\cocos2d\external\xxtea\.;G:\testmkv\testmkv\cocos2d\external\clipper\.;G:\testmkv\testmkv\cocos2d\external\edtaa3func\.;G:\testmkv\testmkv\cocos2d\external\ConvertUTF\.;G:\testmkv\testmkv\cocos2d\external\poly2tri\..;G:\testmkv\testmkv\cocos2d\external\md5\..;G:\testmkv\testmkv\cocos2d\external\unzip\.;G:\testmkv\testmkv\cocos2d\external\Box2D\include;G:\testmkv\testmkv\cocos2d\external\chipmunk\include;G:\testmkv\testmkv\cocos2d\external\freetype2\include\win32\freetype2;G:\testmkv\testmkv\cocos2d\external\bullet\include;G:\testmkv\testmkv\cocos2d\external\bullet\include\bullet;G:\testmkv\testmkv\cocos2d\external\jpeg\include\win32;G:\testmkv\testmkv\cocos2d\external\openssl\include\win32;G:\testmkv\testmkv\cocos2d\external\uv\include;G:\testmkv\testmkv\cocos2d\external\webp\include\win32;G:\testmkv\testmkv\cocos2d\external\websockets\include\win32;G:\testmkv\testmkv\cocos2d\external\curl\include\win32;G:\testmkv\testmkv\cocos2d\external\png\include\win32;G:\testmkv\testmkv\cocos2d\external\win32-specific\gles\include\OGLES;G:\testmkv\testmkv\cocos2d\external\win32-specific\icon\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\MP3Decoder\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\OpenalSoft\include;G:\testmkv\testmkv\cocos2d\external\glfw3\include\win32;G:\testmkv\testmkv\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\testmkv\testmkv\Classes;G:\testmkv\testmkv\cocos2d\cocos\audio\include;G:\testmkv\testmkv\cocos2d;G:\testmkv\testmkv\cocos2d\cocos;G:\testmkv\testmkv\cocos2d\extensions;G:\testmkv\testmkv\cocos2d\cocos\platform;G:\testmkv\testmkv\cocos2d\cocos\editor-support;G:\testmkv\testmkv\cocos2d\cocos\base;G:\testmkv\testmkv\cocos2d\cocos\platform\win32;G:\testmkv\testmkv\cocos2d\external\recast\..;G:\testmkv\testmkv\cocos2d\external\tinyxml2\.;G:\testmkv\testmkv\cocos2d\external\xxhash\.;G:\testmkv\testmkv\cocos2d\external\xxtea\.;G:\testmkv\testmkv\cocos2d\external\clipper\.;G:\testmkv\testmkv\cocos2d\external\edtaa3func\.;G:\testmkv\testmkv\cocos2d\external\ConvertUTF\.;G:\testmkv\testmkv\cocos2d\external\poly2tri\..;G:\testmkv\testmkv\cocos2d\external\md5\..;G:\testmkv\testmkv\cocos2d\external\unzip\.;G:\testmkv\testmkv\cocos2d\external\Box2D\include;G:\testmkv\testmkv\cocos2d\external\chipmunk\include;G:\testmkv\testmkv\cocos2d\external\freetype2\include\win32\freetype2;G:\testmkv\testmkv\cocos2d\external\bullet\include;G:\testmkv\testmkv\cocos2d\external\bullet\include\bullet;G:\testmkv\testmkv\cocos2d\external\jpeg\include\win32;G:\testmkv\testmkv\cocos2d\external\openssl\include\win32;G:\testmkv\testmkv\cocos2d\external\uv\include;G:\testmkv\testmkv\cocos2d\external\webp\include\win32;G:\testmkv\testmkv\cocos2d\external\websockets\include\win32;G:\testmkv\testmkv\cocos2d\external\curl\include\win32;G:\testmkv\testmkv\cocos2d\external\png\include\win32;G:\testmkv\testmkv\cocos2d\external\win32-specific\gles\include\OGLES;G:\testmkv\testmkv\cocos2d\external\win32-specific\icon\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\MP3Decoder\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\OpenalSoft\include;G:\testmkv\testmkv\cocos2d\external\glfw3\include\win32;G:\testmkv\testmkv\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Debug/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Debug/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/uv/prebuilt/win32/uv.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Debug/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/websockets/prebuilt/win32/websockets.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Debug/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/curl/prebuilt/win32/libcurl.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Debug/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Debug/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Debug/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Debug/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Debug/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Debug/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Debug/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Debug/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Debug/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;G:\testmkv\testmkv\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;G:\testmkv\testmkv\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;G:\testmkv\testmkv\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;G:\testmkv\testmkv\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;G:\testmkv\testmkv\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;G:\testmkv\testmkv\cocos2d\external\webp\prebuilt\win32\libwebp.lib;G:\testmkv\testmkv\cocos2d\external\websockets\prebuilt\win32\websockets.lib;G:\testmkv\testmkv\cocos2d\external\openssl\prebuilt\win32\libssl.lib;G:\testmkv\testmkv\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;G:\testmkv\testmkv\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;G:\testmkv\testmkv\cocos2d\external\curl\prebuilt\win32\libcurl.lib;G:\testmkv\testmkv\cocos2d\external\png\prebuilt\win32\libpng.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;G:\testmkv\testmkv\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;G:\testmkv\testmkv\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/testmkv/testmkv/proj.win32/Debug/testmkv.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/testmkv/testmkv/proj.win32/bin/testmkv/Debug/testmkv.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\testmkv\testmkv\Classes;G:\testmkv\testmkv\cocos2d\cocos\audio\include;G:\testmkv\testmkv\cocos2d;G:\testmkv\testmkv\cocos2d\cocos;G:\testmkv\testmkv\cocos2d\extensions;G:\testmkv\testmkv\cocos2d\cocos\platform;G:\testmkv\testmkv\cocos2d\cocos\editor-support;G:\testmkv\testmkv\cocos2d\cocos\base;G:\testmkv\testmkv\cocos2d\cocos\platform\win32;G:\testmkv\testmkv\cocos2d\external\recast\..;G:\testmkv\testmkv\cocos2d\external\tinyxml2\.;G:\testmkv\testmkv\cocos2d\external\xxhash\.;G:\testmkv\testmkv\cocos2d\external\xxtea\.;G:\testmkv\testmkv\cocos2d\external\clipper\.;G:\testmkv\testmkv\cocos2d\external\edtaa3func\.;G:\testmkv\testmkv\cocos2d\external\ConvertUTF\.;G:\testmkv\testmkv\cocos2d\external\poly2tri\..;G:\testmkv\testmkv\cocos2d\external\md5\..;G:\testmkv\testmkv\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "G:/testmkv/testmkv/cocos2d/external/Box2D/include" /external:I "G:/testmkv/testmkv/cocos2d/external/chipmunk/include" /external:I "G:/testmkv/testmkv/cocos2d/external/freetype2/include/win32/freetype2" /external:I "G:/testmkv/testmkv/cocos2d/external/bullet/include" /external:I "G:/testmkv/testmkv/cocos2d/external/bullet/include/bullet" /external:I "G:/testmkv/testmkv/cocos2d/external/jpeg/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/openssl/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/uv/include" /external:I "G:/testmkv/testmkv/cocos2d/external/webp/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/websockets/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/curl/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/png/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/icon/include" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/OggDecoder/include" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "G:/testmkv/testmkv/cocos2d/external/glfw3/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\testmkv\testmkv\Classes;G:\testmkv\testmkv\cocos2d\cocos\audio\include;G:\testmkv\testmkv\cocos2d;G:\testmkv\testmkv\cocos2d\cocos;G:\testmkv\testmkv\cocos2d\extensions;G:\testmkv\testmkv\cocos2d\cocos\platform;G:\testmkv\testmkv\cocos2d\cocos\editor-support;G:\testmkv\testmkv\cocos2d\cocos\base;G:\testmkv\testmkv\cocos2d\cocos\platform\win32;G:\testmkv\testmkv\cocos2d\external\recast\..;G:\testmkv\testmkv\cocos2d\external\tinyxml2\.;G:\testmkv\testmkv\cocos2d\external\xxhash\.;G:\testmkv\testmkv\cocos2d\external\xxtea\.;G:\testmkv\testmkv\cocos2d\external\clipper\.;G:\testmkv\testmkv\cocos2d\external\edtaa3func\.;G:\testmkv\testmkv\cocos2d\external\ConvertUTF\.;G:\testmkv\testmkv\cocos2d\external\poly2tri\..;G:\testmkv\testmkv\cocos2d\external\md5\..;G:\testmkv\testmkv\cocos2d\external\unzip\.;G:\testmkv\testmkv\cocos2d\external\Box2D\include;G:\testmkv\testmkv\cocos2d\external\chipmunk\include;G:\testmkv\testmkv\cocos2d\external\freetype2\include\win32\freetype2;G:\testmkv\testmkv\cocos2d\external\bullet\include;G:\testmkv\testmkv\cocos2d\external\bullet\include\bullet;G:\testmkv\testmkv\cocos2d\external\jpeg\include\win32;G:\testmkv\testmkv\cocos2d\external\openssl\include\win32;G:\testmkv\testmkv\cocos2d\external\uv\include;G:\testmkv\testmkv\cocos2d\external\webp\include\win32;G:\testmkv\testmkv\cocos2d\external\websockets\include\win32;G:\testmkv\testmkv\cocos2d\external\curl\include\win32;G:\testmkv\testmkv\cocos2d\external\png\include\win32;G:\testmkv\testmkv\cocos2d\external\win32-specific\gles\include\OGLES;G:\testmkv\testmkv\cocos2d\external\win32-specific\icon\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\MP3Decoder\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\OpenalSoft\include;G:\testmkv\testmkv\cocos2d\external\glfw3\include\win32;G:\testmkv\testmkv\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\testmkv\testmkv\Classes;G:\testmkv\testmkv\cocos2d\cocos\audio\include;G:\testmkv\testmkv\cocos2d;G:\testmkv\testmkv\cocos2d\cocos;G:\testmkv\testmkv\cocos2d\extensions;G:\testmkv\testmkv\cocos2d\cocos\platform;G:\testmkv\testmkv\cocos2d\cocos\editor-support;G:\testmkv\testmkv\cocos2d\cocos\base;G:\testmkv\testmkv\cocos2d\cocos\platform\win32;G:\testmkv\testmkv\cocos2d\external\recast\..;G:\testmkv\testmkv\cocos2d\external\tinyxml2\.;G:\testmkv\testmkv\cocos2d\external\xxhash\.;G:\testmkv\testmkv\cocos2d\external\xxtea\.;G:\testmkv\testmkv\cocos2d\external\clipper\.;G:\testmkv\testmkv\cocos2d\external\edtaa3func\.;G:\testmkv\testmkv\cocos2d\external\ConvertUTF\.;G:\testmkv\testmkv\cocos2d\external\poly2tri\..;G:\testmkv\testmkv\cocos2d\external\md5\..;G:\testmkv\testmkv\cocos2d\external\unzip\.;G:\testmkv\testmkv\cocos2d\external\Box2D\include;G:\testmkv\testmkv\cocos2d\external\chipmunk\include;G:\testmkv\testmkv\cocos2d\external\freetype2\include\win32\freetype2;G:\testmkv\testmkv\cocos2d\external\bullet\include;G:\testmkv\testmkv\cocos2d\external\bullet\include\bullet;G:\testmkv\testmkv\cocos2d\external\jpeg\include\win32;G:\testmkv\testmkv\cocos2d\external\openssl\include\win32;G:\testmkv\testmkv\cocos2d\external\uv\include;G:\testmkv\testmkv\cocos2d\external\webp\include\win32;G:\testmkv\testmkv\cocos2d\external\websockets\include\win32;G:\testmkv\testmkv\cocos2d\external\curl\include\win32;G:\testmkv\testmkv\cocos2d\external\png\include\win32;G:\testmkv\testmkv\cocos2d\external\win32-specific\gles\include\OGLES;G:\testmkv\testmkv\cocos2d\external\win32-specific\icon\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\MP3Decoder\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\OpenalSoft\include;G:\testmkv\testmkv\cocos2d\external\glfw3\include\win32;G:\testmkv\testmkv\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Release/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Release/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/uv/prebuilt/win32/uv.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Release/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/websockets/prebuilt/win32/websockets.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Release/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/curl/prebuilt/win32/libcurl.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Release/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Release/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Release/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Release/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Release/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Release/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Release/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Release/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/Release/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;G:\testmkv\testmkv\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;G:\testmkv\testmkv\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;G:\testmkv\testmkv\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;G:\testmkv\testmkv\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;G:\testmkv\testmkv\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;G:\testmkv\testmkv\cocos2d\external\webp\prebuilt\win32\libwebp.lib;G:\testmkv\testmkv\cocos2d\external\websockets\prebuilt\win32\websockets.lib;G:\testmkv\testmkv\cocos2d\external\openssl\prebuilt\win32\libssl.lib;G:\testmkv\testmkv\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;G:\testmkv\testmkv\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;G:\testmkv\testmkv\cocos2d\external\curl\prebuilt\win32\libcurl.lib;G:\testmkv\testmkv\cocos2d\external\png\prebuilt\win32\libpng.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;G:\testmkv\testmkv\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;G:\testmkv\testmkv\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/testmkv/testmkv/proj.win32/Release/testmkv.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/testmkv/testmkv/proj.win32/bin/testmkv/Release/testmkv.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\testmkv\testmkv\Classes;G:\testmkv\testmkv\cocos2d\cocos\audio\include;G:\testmkv\testmkv\cocos2d;G:\testmkv\testmkv\cocos2d\cocos;G:\testmkv\testmkv\cocos2d\extensions;G:\testmkv\testmkv\cocos2d\cocos\platform;G:\testmkv\testmkv\cocos2d\cocos\editor-support;G:\testmkv\testmkv\cocos2d\cocos\base;G:\testmkv\testmkv\cocos2d\cocos\platform\win32;G:\testmkv\testmkv\cocos2d\external\recast\..;G:\testmkv\testmkv\cocos2d\external\tinyxml2\.;G:\testmkv\testmkv\cocos2d\external\xxhash\.;G:\testmkv\testmkv\cocos2d\external\xxtea\.;G:\testmkv\testmkv\cocos2d\external\clipper\.;G:\testmkv\testmkv\cocos2d\external\edtaa3func\.;G:\testmkv\testmkv\cocos2d\external\ConvertUTF\.;G:\testmkv\testmkv\cocos2d\external\poly2tri\..;G:\testmkv\testmkv\cocos2d\external\md5\..;G:\testmkv\testmkv\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "G:/testmkv/testmkv/cocos2d/external/Box2D/include" /external:I "G:/testmkv/testmkv/cocos2d/external/chipmunk/include" /external:I "G:/testmkv/testmkv/cocos2d/external/freetype2/include/win32/freetype2" /external:I "G:/testmkv/testmkv/cocos2d/external/bullet/include" /external:I "G:/testmkv/testmkv/cocos2d/external/bullet/include/bullet" /external:I "G:/testmkv/testmkv/cocos2d/external/jpeg/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/openssl/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/uv/include" /external:I "G:/testmkv/testmkv/cocos2d/external/webp/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/websockets/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/curl/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/png/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/icon/include" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/OggDecoder/include" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "G:/testmkv/testmkv/cocos2d/external/glfw3/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\testmkv\testmkv\Classes;G:\testmkv\testmkv\cocos2d\cocos\audio\include;G:\testmkv\testmkv\cocos2d;G:\testmkv\testmkv\cocos2d\cocos;G:\testmkv\testmkv\cocos2d\extensions;G:\testmkv\testmkv\cocos2d\cocos\platform;G:\testmkv\testmkv\cocos2d\cocos\editor-support;G:\testmkv\testmkv\cocos2d\cocos\base;G:\testmkv\testmkv\cocos2d\cocos\platform\win32;G:\testmkv\testmkv\cocos2d\external\recast\..;G:\testmkv\testmkv\cocos2d\external\tinyxml2\.;G:\testmkv\testmkv\cocos2d\external\xxhash\.;G:\testmkv\testmkv\cocos2d\external\xxtea\.;G:\testmkv\testmkv\cocos2d\external\clipper\.;G:\testmkv\testmkv\cocos2d\external\edtaa3func\.;G:\testmkv\testmkv\cocos2d\external\ConvertUTF\.;G:\testmkv\testmkv\cocos2d\external\poly2tri\..;G:\testmkv\testmkv\cocos2d\external\md5\..;G:\testmkv\testmkv\cocos2d\external\unzip\.;G:\testmkv\testmkv\cocos2d\external\Box2D\include;G:\testmkv\testmkv\cocos2d\external\chipmunk\include;G:\testmkv\testmkv\cocos2d\external\freetype2\include\win32\freetype2;G:\testmkv\testmkv\cocos2d\external\bullet\include;G:\testmkv\testmkv\cocos2d\external\bullet\include\bullet;G:\testmkv\testmkv\cocos2d\external\jpeg\include\win32;G:\testmkv\testmkv\cocos2d\external\openssl\include\win32;G:\testmkv\testmkv\cocos2d\external\uv\include;G:\testmkv\testmkv\cocos2d\external\webp\include\win32;G:\testmkv\testmkv\cocos2d\external\websockets\include\win32;G:\testmkv\testmkv\cocos2d\external\curl\include\win32;G:\testmkv\testmkv\cocos2d\external\png\include\win32;G:\testmkv\testmkv\cocos2d\external\win32-specific\gles\include\OGLES;G:\testmkv\testmkv\cocos2d\external\win32-specific\icon\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\MP3Decoder\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\OpenalSoft\include;G:\testmkv\testmkv\cocos2d\external\glfw3\include\win32;G:\testmkv\testmkv\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\testmkv\testmkv\Classes;G:\testmkv\testmkv\cocos2d\cocos\audio\include;G:\testmkv\testmkv\cocos2d;G:\testmkv\testmkv\cocos2d\cocos;G:\testmkv\testmkv\cocos2d\extensions;G:\testmkv\testmkv\cocos2d\cocos\platform;G:\testmkv\testmkv\cocos2d\cocos\editor-support;G:\testmkv\testmkv\cocos2d\cocos\base;G:\testmkv\testmkv\cocos2d\cocos\platform\win32;G:\testmkv\testmkv\cocos2d\external\recast\..;G:\testmkv\testmkv\cocos2d\external\tinyxml2\.;G:\testmkv\testmkv\cocos2d\external\xxhash\.;G:\testmkv\testmkv\cocos2d\external\xxtea\.;G:\testmkv\testmkv\cocos2d\external\clipper\.;G:\testmkv\testmkv\cocos2d\external\edtaa3func\.;G:\testmkv\testmkv\cocos2d\external\ConvertUTF\.;G:\testmkv\testmkv\cocos2d\external\poly2tri\..;G:\testmkv\testmkv\cocos2d\external\md5\..;G:\testmkv\testmkv\cocos2d\external\unzip\.;G:\testmkv\testmkv\cocos2d\external\Box2D\include;G:\testmkv\testmkv\cocos2d\external\chipmunk\include;G:\testmkv\testmkv\cocos2d\external\freetype2\include\win32\freetype2;G:\testmkv\testmkv\cocos2d\external\bullet\include;G:\testmkv\testmkv\cocos2d\external\bullet\include\bullet;G:\testmkv\testmkv\cocos2d\external\jpeg\include\win32;G:\testmkv\testmkv\cocos2d\external\openssl\include\win32;G:\testmkv\testmkv\cocos2d\external\uv\include;G:\testmkv\testmkv\cocos2d\external\webp\include\win32;G:\testmkv\testmkv\cocos2d\external\websockets\include\win32;G:\testmkv\testmkv\cocos2d\external\curl\include\win32;G:\testmkv\testmkv\cocos2d\external\png\include\win32;G:\testmkv\testmkv\cocos2d\external\win32-specific\gles\include\OGLES;G:\testmkv\testmkv\cocos2d\external\win32-specific\icon\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\MP3Decoder\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\OpenalSoft\include;G:\testmkv\testmkv\cocos2d\external\glfw3\include\win32;G:\testmkv\testmkv\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/MinSizeRel/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/MinSizeRel/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/uv/prebuilt/win32/uv.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/MinSizeRel/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/websockets/prebuilt/win32/websockets.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/MinSizeRel/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/curl/prebuilt/win32/libcurl.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/MinSizeRel/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/MinSizeRel/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/MinSizeRel/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/MinSizeRel/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/MinSizeRel/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/MinSizeRel/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/MinSizeRel/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/MinSizeRel/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/MinSizeRel/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;G:\testmkv\testmkv\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;G:\testmkv\testmkv\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;G:\testmkv\testmkv\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;G:\testmkv\testmkv\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;G:\testmkv\testmkv\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;G:\testmkv\testmkv\cocos2d\external\webp\prebuilt\win32\libwebp.lib;G:\testmkv\testmkv\cocos2d\external\websockets\prebuilt\win32\websockets.lib;G:\testmkv\testmkv\cocos2d\external\openssl\prebuilt\win32\libssl.lib;G:\testmkv\testmkv\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;G:\testmkv\testmkv\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;G:\testmkv\testmkv\cocos2d\external\curl\prebuilt\win32\libcurl.lib;G:\testmkv\testmkv\cocos2d\external\png\prebuilt\win32\libpng.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;G:\testmkv\testmkv\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;G:\testmkv\testmkv\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/testmkv/testmkv/proj.win32/MinSizeRel/testmkv.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/testmkv/testmkv/proj.win32/bin/testmkv/MinSizeRel/testmkv.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\testmkv\testmkv\Classes;G:\testmkv\testmkv\cocos2d\cocos\audio\include;G:\testmkv\testmkv\cocos2d;G:\testmkv\testmkv\cocos2d\cocos;G:\testmkv\testmkv\cocos2d\extensions;G:\testmkv\testmkv\cocos2d\cocos\platform;G:\testmkv\testmkv\cocos2d\cocos\editor-support;G:\testmkv\testmkv\cocos2d\cocos\base;G:\testmkv\testmkv\cocos2d\cocos\platform\win32;G:\testmkv\testmkv\cocos2d\external\recast\..;G:\testmkv\testmkv\cocos2d\external\tinyxml2\.;G:\testmkv\testmkv\cocos2d\external\xxhash\.;G:\testmkv\testmkv\cocos2d\external\xxtea\.;G:\testmkv\testmkv\cocos2d\external\clipper\.;G:\testmkv\testmkv\cocos2d\external\edtaa3func\.;G:\testmkv\testmkv\cocos2d\external\ConvertUTF\.;G:\testmkv\testmkv\cocos2d\external\poly2tri\..;G:\testmkv\testmkv\cocos2d\external\md5\..;G:\testmkv\testmkv\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "G:/testmkv/testmkv/cocos2d/external/Box2D/include" /external:I "G:/testmkv/testmkv/cocos2d/external/chipmunk/include" /external:I "G:/testmkv/testmkv/cocos2d/external/freetype2/include/win32/freetype2" /external:I "G:/testmkv/testmkv/cocos2d/external/bullet/include" /external:I "G:/testmkv/testmkv/cocos2d/external/bullet/include/bullet" /external:I "G:/testmkv/testmkv/cocos2d/external/jpeg/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/openssl/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/uv/include" /external:I "G:/testmkv/testmkv/cocos2d/external/webp/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/websockets/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/curl/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/png/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/icon/include" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/OggDecoder/include" /external:I "G:/testmkv/testmkv/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "G:/testmkv/testmkv/cocos2d/external/glfw3/include/win32" /external:I "G:/testmkv/testmkv/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\testmkv\testmkv\Classes;G:\testmkv\testmkv\cocos2d\cocos\audio\include;G:\testmkv\testmkv\cocos2d;G:\testmkv\testmkv\cocos2d\cocos;G:\testmkv\testmkv\cocos2d\extensions;G:\testmkv\testmkv\cocos2d\cocos\platform;G:\testmkv\testmkv\cocos2d\cocos\editor-support;G:\testmkv\testmkv\cocos2d\cocos\base;G:\testmkv\testmkv\cocos2d\cocos\platform\win32;G:\testmkv\testmkv\cocos2d\external\recast\..;G:\testmkv\testmkv\cocos2d\external\tinyxml2\.;G:\testmkv\testmkv\cocos2d\external\xxhash\.;G:\testmkv\testmkv\cocos2d\external\xxtea\.;G:\testmkv\testmkv\cocos2d\external\clipper\.;G:\testmkv\testmkv\cocos2d\external\edtaa3func\.;G:\testmkv\testmkv\cocos2d\external\ConvertUTF\.;G:\testmkv\testmkv\cocos2d\external\poly2tri\..;G:\testmkv\testmkv\cocos2d\external\md5\..;G:\testmkv\testmkv\cocos2d\external\unzip\.;G:\testmkv\testmkv\cocos2d\external\Box2D\include;G:\testmkv\testmkv\cocos2d\external\chipmunk\include;G:\testmkv\testmkv\cocos2d\external\freetype2\include\win32\freetype2;G:\testmkv\testmkv\cocos2d\external\bullet\include;G:\testmkv\testmkv\cocos2d\external\bullet\include\bullet;G:\testmkv\testmkv\cocos2d\external\jpeg\include\win32;G:\testmkv\testmkv\cocos2d\external\openssl\include\win32;G:\testmkv\testmkv\cocos2d\external\uv\include;G:\testmkv\testmkv\cocos2d\external\webp\include\win32;G:\testmkv\testmkv\cocos2d\external\websockets\include\win32;G:\testmkv\testmkv\cocos2d\external\curl\include\win32;G:\testmkv\testmkv\cocos2d\external\png\include\win32;G:\testmkv\testmkv\cocos2d\external\win32-specific\gles\include\OGLES;G:\testmkv\testmkv\cocos2d\external\win32-specific\icon\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\MP3Decoder\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\OpenalSoft\include;G:\testmkv\testmkv\cocos2d\external\glfw3\include\win32;G:\testmkv\testmkv\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\testmkv\testmkv\Classes;G:\testmkv\testmkv\cocos2d\cocos\audio\include;G:\testmkv\testmkv\cocos2d;G:\testmkv\testmkv\cocos2d\cocos;G:\testmkv\testmkv\cocos2d\extensions;G:\testmkv\testmkv\cocos2d\cocos\platform;G:\testmkv\testmkv\cocos2d\cocos\editor-support;G:\testmkv\testmkv\cocos2d\cocos\base;G:\testmkv\testmkv\cocos2d\cocos\platform\win32;G:\testmkv\testmkv\cocos2d\external\recast\..;G:\testmkv\testmkv\cocos2d\external\tinyxml2\.;G:\testmkv\testmkv\cocos2d\external\xxhash\.;G:\testmkv\testmkv\cocos2d\external\xxtea\.;G:\testmkv\testmkv\cocos2d\external\clipper\.;G:\testmkv\testmkv\cocos2d\external\edtaa3func\.;G:\testmkv\testmkv\cocos2d\external\ConvertUTF\.;G:\testmkv\testmkv\cocos2d\external\poly2tri\..;G:\testmkv\testmkv\cocos2d\external\md5\..;G:\testmkv\testmkv\cocos2d\external\unzip\.;G:\testmkv\testmkv\cocos2d\external\Box2D\include;G:\testmkv\testmkv\cocos2d\external\chipmunk\include;G:\testmkv\testmkv\cocos2d\external\freetype2\include\win32\freetype2;G:\testmkv\testmkv\cocos2d\external\bullet\include;G:\testmkv\testmkv\cocos2d\external\bullet\include\bullet;G:\testmkv\testmkv\cocos2d\external\jpeg\include\win32;G:\testmkv\testmkv\cocos2d\external\openssl\include\win32;G:\testmkv\testmkv\cocos2d\external\uv\include;G:\testmkv\testmkv\cocos2d\external\webp\include\win32;G:\testmkv\testmkv\cocos2d\external\websockets\include\win32;G:\testmkv\testmkv\cocos2d\external\curl\include\win32;G:\testmkv\testmkv\cocos2d\external\png\include\win32;G:\testmkv\testmkv\cocos2d\external\win32-specific\gles\include\OGLES;G:\testmkv\testmkv\cocos2d\external\win32-specific\icon\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\MP3Decoder\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\include;G:\testmkv\testmkv\cocos2d\external\win32-specific\OpenalSoft\include;G:\testmkv\testmkv\cocos2d\external\glfw3\include\win32;G:\testmkv\testmkv\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/RelWithDebInfo/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/RelWithDebInfo/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/uv/prebuilt/win32/uv.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/RelWithDebInfo/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/websockets/prebuilt/win32/websockets.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/RelWithDebInfo/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/curl/prebuilt/win32/libcurl.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/RelWithDebInfo/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/RelWithDebInfo/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/RelWithDebInfo/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/RelWithDebInfo/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/RelWithDebInfo/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/RelWithDebInfo/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/RelWithDebInfo/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/RelWithDebInfo/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+G:\CMake\bin\cmake.exe -E copy_if_different G:/testmkv/testmkv/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll G:/testmkv/testmkv/proj.win32/bin/testmkv/RelWithDebInfo/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;G:\testmkv\testmkv\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;G:\testmkv\testmkv\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;G:\testmkv\testmkv\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;G:\testmkv\testmkv\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;G:\testmkv\testmkv\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;G:\testmkv\testmkv\cocos2d\external\webp\prebuilt\win32\libwebp.lib;G:\testmkv\testmkv\cocos2d\external\websockets\prebuilt\win32\websockets.lib;G:\testmkv\testmkv\cocos2d\external\openssl\prebuilt\win32\libssl.lib;G:\testmkv\testmkv\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;G:\testmkv\testmkv\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;G:\testmkv\testmkv\cocos2d\external\curl\prebuilt\win32\libcurl.lib;G:\testmkv\testmkv\cocos2d\external\png\prebuilt\win32\libpng.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;G:\testmkv\testmkv\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;G:\testmkv\testmkv\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;G:\testmkv\testmkv\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/testmkv/testmkv/proj.win32/RelWithDebInfo/testmkv.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/testmkv/testmkv/proj.win32/bin/testmkv/RelWithDebInfo/testmkv.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\testmkv\testmkv\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule G:/testmkv/testmkv/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+G:\CMake\bin\cmake.exe -SG:/testmkv/testmkv -BG:/testmkv/testmkv/proj.win32 --check-stamp-file G:/testmkv/testmkv/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;G:\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;G:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;G:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;G:\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;G:\testmkv\testmkv\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;G:\testmkv\testmkv\cocos2d\cmake\Modules\CocosBuildSet.cmake;G:\testmkv\testmkv\cocos2d\cmake\Modules\CocosConfigDefine.cmake;G:\testmkv\testmkv\cocos2d\cmake\Modules\CocosConfigDepend.cmake;G:\testmkv\testmkv\proj.win32\CMakeFiles\3.24.0-rc1\CMakeCCompiler.cmake;G:\testmkv\testmkv\proj.win32\CMakeFiles\3.24.0-rc1\CMakeCXXCompiler.cmake;G:\testmkv\testmkv\proj.win32\CMakeFiles\3.24.0-rc1\CMakeRCCompiler.cmake;G:\testmkv\testmkv\proj.win32\CMakeFiles\3.24.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\testmkv\testmkv\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule G:/testmkv/testmkv/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+G:\CMake\bin\cmake.exe -SG:/testmkv/testmkv -BG:/testmkv/testmkv/proj.win32 --check-stamp-file G:/testmkv/testmkv/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;G:\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;G:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;G:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;G:\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;G:\testmkv\testmkv\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;G:\testmkv\testmkv\cocos2d\cmake\Modules\CocosBuildSet.cmake;G:\testmkv\testmkv\cocos2d\cmake\Modules\CocosConfigDefine.cmake;G:\testmkv\testmkv\cocos2d\cmake\Modules\CocosConfigDepend.cmake;G:\testmkv\testmkv\proj.win32\CMakeFiles\3.24.0-rc1\CMakeCCompiler.cmake;G:\testmkv\testmkv\proj.win32\CMakeFiles\3.24.0-rc1\CMakeCXXCompiler.cmake;G:\testmkv\testmkv\proj.win32\CMakeFiles\3.24.0-rc1\CMakeRCCompiler.cmake;G:\testmkv\testmkv\proj.win32\CMakeFiles\3.24.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\testmkv\testmkv\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule G:/testmkv/testmkv/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+G:\CMake\bin\cmake.exe -SG:/testmkv/testmkv -BG:/testmkv/testmkv/proj.win32 --check-stamp-file G:/testmkv/testmkv/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;G:\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;G:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;G:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;G:\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;G:\testmkv\testmkv\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;G:\testmkv\testmkv\cocos2d\cmake\Modules\CocosBuildSet.cmake;G:\testmkv\testmkv\cocos2d\cmake\Modules\CocosConfigDefine.cmake;G:\testmkv\testmkv\cocos2d\cmake\Modules\CocosConfigDepend.cmake;G:\testmkv\testmkv\proj.win32\CMakeFiles\3.24.0-rc1\CMakeCCompiler.cmake;G:\testmkv\testmkv\proj.win32\CMakeFiles\3.24.0-rc1\CMakeCXXCompiler.cmake;G:\testmkv\testmkv\proj.win32\CMakeFiles\3.24.0-rc1\CMakeRCCompiler.cmake;G:\testmkv\testmkv\proj.win32\CMakeFiles\3.24.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\testmkv\testmkv\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule G:/testmkv/testmkv/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+G:\CMake\bin\cmake.exe -SG:/testmkv/testmkv -BG:/testmkv/testmkv/proj.win32 --check-stamp-file G:/testmkv/testmkv/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;G:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;G:\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;G:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;G:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;G:\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;G:\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;G:\testmkv\testmkv\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;G:\testmkv\testmkv\cocos2d\cmake\Modules\CocosBuildSet.cmake;G:\testmkv\testmkv\cocos2d\cmake\Modules\CocosConfigDefine.cmake;G:\testmkv\testmkv\cocos2d\cmake\Modules\CocosConfigDepend.cmake;G:\testmkv\testmkv\proj.win32\CMakeFiles\3.24.0-rc1\CMakeCCompiler.cmake;G:\testmkv\testmkv\proj.win32\CMakeFiles\3.24.0-rc1\CMakeCXXCompiler.cmake;G:\testmkv\testmkv\proj.win32\CMakeFiles\3.24.0-rc1\CMakeRCCompiler.cmake;G:\testmkv\testmkv\proj.win32\CMakeFiles\3.24.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\testmkv\testmkv\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="G:\testmkv\testmkv\Classes\AppDelegate.h" />
+    <ClInclude Include="G:\testmkv\testmkv\Classes\HelloWorldScene.h" />
+    <ClInclude Include="G:\testmkv\testmkv\Classes\GameOverScene.h" />
+    <ClInclude Include="G:\testmkv\testmkv\proj.win32\main.h" />
+    <ClInclude Include="G:\testmkv\testmkv\proj.win32\resource.h" />
+    <ClCompile Include="G:\testmkv\testmkv\Classes\AppDelegate.cpp" />
+    <ClCompile Include="G:\testmkv\testmkv\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="G:\testmkv\testmkv\Classes\GameOverScene.cpp" />
+    <ClCompile Include="G:\testmkv\testmkv\proj.win32\main.cpp" />
+    <ResourceCompile Include="G:\testmkv\testmkv\proj.win32\game.rc" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\CloseNormal.png" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\CloseSelected.png" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\HelloWorld.png" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp1.png" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp10.png" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp11.png" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp12.png" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp2.png" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp3.png" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp4.png" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp5.png" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp6.png" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp7.png" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp8.png" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp9.png" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\fonts\Marker Felt.ttf" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\fonts\arial.ttf" />
+    <ClInclude Include="G:\testmkv\testmkv\Resources\res\.gitkeep" />
+    <ClCompile Include="G:\testmkv\testmkv\cocos2d\cocos\precheader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\testmkv\testmkv\proj.win32\ZERO_CHECK.proj">
+      <Project>{792CCAF2-57DE-3F1E-B25B-252FF077BA70}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="G:\testmkv\testmkv\proj.win32\SYNC_RESOURCE-testmkv.vcxproj">
+      <Project>{9116B8F3-EFA5-34BA-9CB6-7EBDFCF6888C}</Project>
+      <Name>SYNC_RESOURCE-testmkv</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="G:\testmkv\testmkv\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{1128C8BA-9211-30EF-A4F3-4909FB68DAAE}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\testmkv\testmkv\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{0CC98913-2C07-383E-9F68-71961BEFE962}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\testmkv\testmkv\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{D448FA40-AFD5-39BE-9735-C08278C9A2E1}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\testmkv\testmkv\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{F73CB020-9104-3CB5-9873-B55D259FBE57}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\testmkv\testmkv\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{002049C5-CA4F-3B6A-B318-1B239DDC7C46}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\testmkv\testmkv\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{3FF72D56-F3E5-3993-9812-3E5E040F18FD}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\testmkv\testmkv\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{9DD18346-0967-30BC-9E5C-2CE3986A610A}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\testmkv\testmkv\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{6349C852-DA82-33D9-81E5-9B754189D2C8}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\testmkv\testmkv\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{D12CE0B9-1CEF-315A-8564-37A54168EEAD}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\testmkv\testmkv\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{23D46B80-4013-3C00-9C80-C4600EEEF00F}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\testmkv\testmkv\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{FF5442A7-6607-3223-B901-A48C685FB225}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\testmkv\testmkv\proj.win32\engine\external\external.vcxproj">
+      <Project>{94A4665F-FC36-30E5-B802-08CBD05C25F5}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

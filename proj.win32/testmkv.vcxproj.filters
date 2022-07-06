@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="G:\testmkv\testmkv\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\testmkv\testmkv\Classes\HelloWorldScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\testmkv\testmkv\Classes\GameOverScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\testmkv\testmkv\proj.win32\main.cpp">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\testmkv\testmkv\cocos2d\cocos\precheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="G:\testmkv\testmkv\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Classes\HelloWorldScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Classes\GameOverScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\proj.win32\main.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\proj.win32\resource.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\CloseNormal.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\CloseSelected.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\HelloWorld.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp1.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp10.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp11.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp12.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp2.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp3.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp4.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp5.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp6.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp7.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp8.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\exp9.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\fonts\Marker Felt.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\fonts\arial.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\testmkv\testmkv\Resources\res\.gitkeep">
+      <Filter>Resources\res</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\testmkv\testmkv\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="G:\testmkv\testmkv\proj.win32\game.rc">
+      <Filter>Source Files\proj.win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{4FC9E3E4-EFDA-3038-B620-E09D09A5DB35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\fonts">
+      <UniqueIdentifier>{3B0B03D8-67E6-3C46-B738-CD1A80AD7FE8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res">
+      <UniqueIdentifier>{31F0BF4D-A5B6-385B-9966-AB137993BD72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{36CE2A9F-E76B-34B2-875B-71AF5D4D0A19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes">
+      <UniqueIdentifier>{BE4DB03A-827C-356D-98E3-A631BFD4A876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proj.win32">
+      <UniqueIdentifier>{6BF2A665-6D8C-3C1B-AE85-6BF7244705C3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
