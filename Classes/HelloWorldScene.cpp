@@ -1,15 +1,15 @@
-#include "HelloWorldScene.h"
+п»ї#include "HelloWorldScene.h"
 #include "GameOverScene.h"
 
-USING_NS_CC; // макрос использования пространства имён cocos2d::
+USING_NS_CC; // РјР°РєСЂРѕСЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІР° РёРјС‘РЅ cocos2d::
 
 Scene* HelloWorld::createScene()
 {
-    // все указатели, которые порождает Cocos - 2dx уже находятся под контролем выделенной памяти. Поэтому они не требуют явного удаления через delete или обертки в интеллектуальный указатель
-    auto scene = Scene::create(); // создаем сцену
-    auto layer = HelloWorld::create(); // создаем слой сцены
+    // РІСЃРµ СѓРєР°Р·Р°С‚РµР»Рё, РєРѕС‚РѕСЂС‹Рµ РїРѕСЂРѕР¶РґР°РµС‚ Cocos - 2dx СѓР¶Рµ РЅР°С…РѕРґСЏС‚СЃСЏ РїРѕРґ РєРѕРЅС‚СЂРѕР»РµРј РІС‹РґРµР»РµРЅРЅРѕР№ РїР°РјСЏС‚Рё. РџРѕСЌС‚РѕРјСѓ РѕРЅРё РЅРµ С‚СЂРµР±СѓСЋС‚ СЏРІРЅРѕРіРѕ СѓРґР°Р»РµРЅРёСЏ С‡РµСЂРµР· delete РёР»Рё РѕР±РµСЂС‚РєРё РІ РёРЅС‚РµР»Р»РµРєС‚СѓР°Р»СЊРЅС‹Р№ СѓРєР°Р·Р°С‚РµР»СЊ
+    auto scene = Scene::create(); // СЃРѕР·РґР°РµРј СЃС†РµРЅСѓ
+    auto layer = HelloWorld::create(); // СЃРѕР·РґР°РµРј СЃР»РѕР№ СЃС†РµРЅС‹
 
-    scene->addChild(layer); // добавляем слой как ребенка на сцену
+    scene->addChild(layer); // РґРѕР±Р°РІР»СЏРµРј СЃР»РѕР№ РєР°Рє СЂРµР±РµРЅРєР° РЅР° СЃС†РµРЅСѓ
 
 
     return scene;
@@ -17,13 +17,13 @@ Scene* HelloWorld::createScene()
 
 bool HelloWorld::init()
 {
-    if (!Layer::init()) // если мы не можем проинициализировать - просто выходим
+    if (!Layer::init()) // РµСЃР»Рё РјС‹ РЅРµ РјРѕР¶РµРј РїСЂРѕРёРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°С‚СЊ - РїСЂРѕСЃС‚Рѕ РІС‹С…РѕРґРёРј
     {
         return false;
     }
 
-    auto visibleSize = Director::getInstance()->getVisibleSize(); // получаем размеры вида просмотра (то, где будем рисовать)
-    Vec2 origin = Director::getInstance()->getVisibleOrigin(); // получаем вектор смещения, для рисования на разных координатах
+    auto visibleSize = Director::getInstance()->getVisibleSize(); // РїРѕР»СѓС‡Р°РµРј СЂР°Р·РјРµСЂС‹ РІРёРґР° РїСЂРѕСЃРјРѕС‚СЂР° (С‚Рѕ, РіРґРµ Р±СѓРґРµРј СЂРёСЃРѕРІР°С‚СЊ)
+    Vec2 origin = Director::getInstance()->getVisibleOrigin(); // РїРѕР»СѓС‡Р°РµРј РІРµРєС‚РѕСЂ СЃРјРµС‰РµРЅРёСЏ, РґР»СЏ СЂРёСЃРѕРІР°РЅРёСЏ РЅР° СЂР°Р·РЅС‹С… РєРѕРѕСЂРґРёРЅР°С‚Р°С…
 
     this->scheduleUpdate();
 
@@ -35,8 +35,9 @@ void HelloWorld::update(float delta)
     time += delta;
     if (time >= 1.f)
     {
-        float x = random() % 600;
-        float y = random() % 500;
+        auto visibleSize = Director::getInstance()->getVisibleSize();
+        float x = random() % visibleSize.width;
+        float y = random() % visibleSize.hight;
 
         auto touchListener = EventListenerTouchOneByOne::create();
 
@@ -65,9 +66,9 @@ void HelloWorld::update(float delta)
 
 bool HelloWorld::onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* _event)
 {
-    //touch->getLocation(); // место нажатия
-    //event->getCurrentTarget(); // на какой контрол мы кликнули, его адрес.
-    //event->getCurrentTarget()->getBoundingBox(); // ограничивающий бокс вокруг контрола 
+    //touch->getLocation(); // РјРµСЃС‚Рѕ РЅР°Р¶Р°С‚РёСЏ
+    //event->getCurrentTarget(); // РЅР° РєР°РєРѕР№ РєРѕРЅС‚СЂРѕР» РјС‹ РєР»РёРєРЅСѓР»Рё, РµРіРѕ Р°РґСЂРµСЃ.
+    //event->getCurrentTarget()->getBoundingBox(); // РѕРіСЂР°РЅРёС‡РёРІР°СЋС‰РёР№ Р±РѕРєСЃ РІРѕРєСЂСѓРі РєРѕРЅС‚СЂРѕР»Р° 
 
     auto bounds = _event->getCurrentTarget()->getBoundingBox();
     auto pos = touch->getLocation();
@@ -81,15 +82,15 @@ bool HelloWorld::onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* _event)
 
 void HelloWorld::onTouchEnded(Touch* touch, Event* event)
 {
-    cocos2d::log("touch ended"); // полезный метод: логирует вывод в консоль
+    cocos2d::log("touch ended"); // РїРѕР»РµР·РЅС‹Р№ РјРµС‚РѕРґ: Р»РѕРіРёСЂСѓРµС‚ РІС‹РІРѕРґ РІ РєРѕРЅСЃРѕР»СЊ
 }
 
 void HelloWorld::onTouchMoved(Touch* touch, Event* event)
 {
-    cocos2d::log("touch moved");// полезный метод: логирует вывод в консоль
+    cocos2d::log("touch moved");// РїРѕР»РµР·РЅС‹Р№ РјРµС‚РѕРґ: Р»РѕРіРёСЂСѓРµС‚ РІС‹РІРѕРґ РІ РєРѕРЅСЃРѕР»СЊ
 }
 
 void HelloWorld::onTouchCancelled(Touch* touch, Event* event)
 {
-    cocos2d::log("touch cancelled");// полезный метод: логирует вывод в консоль
+    cocos2d::log("touch cancelled");// РїРѕР»РµР·РЅС‹Р№ РјРµС‚РѕРґ: Р»РѕРіРёСЂСѓРµС‚ РІС‹РІРѕРґ РІ РєРѕРЅСЃРѕР»СЊ
 }

@@ -1,16 +1,16 @@
-#pragma once
+п»ї#pragma once
 #include "cocos2d.h"
 
-class HelloWorld : public cocos2d::Layer // класс сцены
+class HelloWorld : public cocos2d::Layer // РєР»Р°СЃСЃ СЃС†РµРЅС‹
 {
 public:
-    static cocos2d::Scene* createScene(); // метод создания сцены
-    bool init() override; // метод инициализации
+    static cocos2d::Scene* createScene(); // РјРµС‚РѕРґ СЃРѕР·РґР°РЅРёСЏ СЃС†РµРЅС‹
+    bool init() override; // РјРµС‚РѕРґ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё
 
-    bool onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event) override; // клик
-    virtual void onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* event) override; // окончание клика
-    virtual void onTouchMoved(cocos2d::Touch* touch, cocos2d::Event* event) override; // перемещение с зажатой кнопкой/пальцем
-    virtual void onTouchCancelled(cocos2d::Touch* touch, cocos2d::Event* event) override; // отпускаем кнопку/палец
+    bool onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event) override; // РєР»РёРє
+    virtual void onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* event) override; // РѕРєРѕРЅС‡Р°РЅРёРµ РєР»РёРєР°
+    virtual void onTouchMoved(cocos2d::Touch* touch, cocos2d::Event* event) override; // РїРµСЂРµРјРµС‰РµРЅРёРµ СЃ Р·Р°Р¶Р°С‚РѕР№ РєРЅРѕРїРєРѕР№/РїР°Р»СЊС†РµРј
+    virtual void onTouchCancelled(cocos2d::Touch* touch, cocos2d::Event* event) override; // РѕС‚РїСѓСЃРєР°РµРј РєРЅРѕРїРєСѓ/РїР°Р»РµС†
 
     std::vector<cocos2d::Sprite*> sprites;
     std::vector<std::string> spr;
@@ -21,6 +21,6 @@ public:
 
     void update(float delta);
 
-    CREATE_FUNC(HelloWorld); // макрос, который раскрывается и генерирует экземпляр класса подконтрольный GC (GarbageCollector движка cocos-2dx)
+    CREATE_FUNC(HelloWorld); // РјР°РєСЂРѕСЃ, РєРѕС‚РѕСЂС‹Р№ СЂР°СЃРєСЂС‹РІР°РµС‚СЃСЏ Рё РіРµРЅРµСЂРёСЂСѓРµС‚ СЌРєР·РµРјРїР»СЏСЂ РєР»Р°СЃСЃР° РїРѕРґРєРѕРЅС‚СЂРѕР»СЊРЅС‹Р№ GC (GarbageCollector РґРІРёР¶РєР° cocos-2dx)
 
 };
